@@ -1,0 +1,9 @@
+2026年10月8日核查
+
+正式网站地图已覆盖213个规范页面，HTTP200；www域名HTTP301跳转主域名。
+Bing网站地图已重新提交，后台进入Processing；此前后台发现38个URL，这不是已收录数量。
+抽查：https://fanqiangdaohang.blog/blog/breezenet-budget/
+Bing索引状态为Not discovered；已点击Request indexing，后台显示Indexing requested。
+实时测试结果：URL can be indexed by Bing；No SEO/GEO issues found；识别2种结构化标记。
+IndexNow全球端点已收到213个更新URL，HTTP200，详见IndexNow提交记录.json。
+以上是提交与可抓取证明，不是已经收录或获得排名的证明。
