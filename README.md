@@ -32,4 +32,3 @@ npm run preview
 GitHub Pages 工作流使用 `dist/` 作为发布目录。启用仓库 Settings → Pages → GitHub Actions，并按 `docs/上线与Bing.md` 配置域名。
 
 `.openai/hosting.json` 用于 Sites 预览发布；GitHub Pages 使用独立工作流，两者都可部署相同静态内容。正式域名应该仅选择一个托管目标。
-
