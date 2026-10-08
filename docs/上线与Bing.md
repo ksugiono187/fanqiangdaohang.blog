@@ -2,7 +2,7 @@
 
 ## 已制作
 
-38 个独立静态 HTML 页面；中文语言声明；逐页唯一 Title、Description、Keywords；canonical；Open Graph 与 Twitter 文字元信息；WebSite、ItemList、Article、面包屑 JSON-LD；6 个关键词专题；29 个品牌详情内链；robots.txt；sitemap.xml；404；响应式布局；推广链接 rel=sponsored nofollow；11 个优惠码复制按钮。
+46 个独立静态 HTML 页面；中文语言声明；逐页唯一 Title、Description、Keywords；canonical；Open Graph 与 Twitter 文字元信息；WebSite、ItemList、Article、面包屑 JSON-LD；6 个关键词专题；29 个品牌详情内链；robots.txt；sitemap.xml；404；响应式布局；推广链接 rel=sponsored nofollow；11 个优惠码复制按钮。
 
 关键词页分别为：
 
@@ -19,7 +19,7 @@
 
 ## 正式上线
 
-正式 canonical 与 sitemap 使用 https://fanqiangdaohang.blog 。2026-10-08 已通过 GitHub Pages 发布并绑定 Cloudflare DNS，HTTPS 首页、品牌页、robots 和 sitemap 已公开返回 HTTP 200。网站地图包含 38 个 URL。
+正式 canonical 与 sitemap 使用 https://fanqiangdaohang.blog 。2026-10-08 已通过 GitHub Pages 发布并绑定 Cloudflare DNS，HTTPS 首页、品牌页、robots 和 sitemap 已公开返回 HTTP 200。网站地图包含 46 个 URL。
 
 ### GitHub Pages 选项
 
