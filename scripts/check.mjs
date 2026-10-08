@@ -5,6 +5,10 @@ import {expandedPosts} from './library.mjs';
 const root=path.resolve(import.meta.dirname,'..'),out=path.join(root,'dist');
 const brands=JSON.parse(fs.readFileSync(path.join(root,'data/brands.json'),'utf8'));
 const seo=JSON.parse(fs.readFileSync(path.join(root,'data/seo.json'),'utf8'));
+const articleIndex=JSON.parse(fs.readFileSync(path.join(out,'data/articles.json'),'utf8'));
+assert.equal(articleIndex.length,155,'Search must cover all 155 articles');
+assert.equal(new Set(articleIndex.map(p=>p.route)).size,155);
+for(const p of articleIndex){assert(seo.some(r=>r.route===p.route),'Search points to missing page');const html=fs.readFileSync(path.join(out,p.route.slice(1),'index.html'),'utf8');assert(html.includes('class="reading-pagination"'));assert(html.includes('id="article-toc"'));}
 const newPosts=expandedPosts({brands,esc:s=>String(s),link:(_,label)=>label});
 assert.equal(newPosts.length,150,'Must add 150 original research pages');
 assert.equal(new Set(newPosts.map(p=>p.slug)).size,150);

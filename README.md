@@ -40,3 +40,7 @@ GitHub Pages 工作流使用 `dist/` 作为发布目录。启用仓库 Settings 
 编辑源为 scripts/library.mjs；品牌研究角度在 lenses 中分别维护，专题排序理由在 topicConclusions 中逐条维护。文章清单在 data/article-library.json。价格和流量保留来源文字，未同档不计算单位成本；大佬云参数待补充。
 
 大佬云参数补充：站长直接提供130GB、￥23；付款与流量周期待确认。数据保存在 data/owner-parameters.json，覆盖旧博客未收录状态。
+
+## 阅读导航
+
+全站随手导航提供文章搜索、目录或专题、品牌对比与返回顶部。155篇文章的搜索索引在 dist/data/articles.json；搜索可组合关键词和分类，结果每次展示12篇并支持加载更多。Ctrl/Cmd+K打开搜索。博客首页与分页有分类快捷入口；文章提供上一篇和下一篇。手机目录默认折叠，目录快捷按钮自动展开。

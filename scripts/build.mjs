@@ -1,9 +1,10 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import {renderBrand,registerEditorial,topicResearch} from './editorial.mjs';
+import {renderBrand,registerEditorial,topicResearch,posts as basePosts} from './editorial.mjs';
 import {referenceFor} from './reference-data.mjs';
 import {homepage} from './homepage.mjs';
-import {renderTenBrandGuide} from './library.mjs';
+import {renderTenBrandGuide,expandedPosts} from './library.mjs';
+import {readingTools,navigationUI} from './navigation.mjs';
 const root=path.resolve(import.meta.dirname,'..'), out=path.join(root,'dist');
 const origin='https://fanqiangdaohang.blog', date='2026-10-08';
 const raw=[
@@ -52,14 +53,17 @@ const topics=[
 ];
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const link=(url,label,external=false,cls='')=>`<a ${cls?`class="${cls}"`:''} href="${esc(url)}" ${external?'target="_blank" rel="sponsored nofollow noopener noreferrer"':''}>${esc(label)}</a>`;
+const articleIndex=[...basePosts.map(p=>({route:'/blog/'+p[0]+'/',title:p[1],category:'选购基础',description:p[3]})),...expandedPosts({brands,esc:s=>String(s),link:(_,t)=>t}).map(p=>({route:'/blog/'+p.slug+'/',title:p.title,category:p.category,description:p.description}))];
+fs.mkdirSync(path.join(out,'data'),{recursive:true});fs.writeFileSync(path.join(out,'data/articles.json'),JSON.stringify(articleIndex));
 const routes=[];
 const nav=`<a class="wordmark" href="/" aria-label="三毛机场首页"><span class="mark">S</span><span>三毛机场<small>品牌资料 · 选购研究</small></span></a><nav aria-label="主导航">${link('/#brands','品牌目录')}${link('/blog/','博客文章')}${link('/topics/','选购专题')}${link('/about/','编辑说明')}${link('/compare/','机场对比 →',false,'nav-compare')}</nav>`;
 const footer=`<footer><div class="wrap footer-grid"><div><strong>三毛机场</strong><p>读懂套餐，找到适合你的连接。</p><small>© 2026 fanqiangdaohang.blog</small></div><div><h3>阅读专题</h3>${topics.map(t=>link('/guides/'+t[0]+'/',t[1])).join('')}</div><div><h3>探索内容</h3>${link('/blog/','机场博客')}${link('/topics/','专题中心')}${link('/compare/','机场对比')}${link('/about/','编辑说明与商业披露')}${link('/privacy/','隐私说明')}${link('/sitemap.xml','网站地图')}<p>入口含推广标识，本站可能获得佣金。<br>收录及排序不代表独立测速结论。</p></div></div></footer>`;
 function page(route,title,description,keywords,body,extra=[],type='WebPage'){
+body=readingTools(route,body,articleIndex);
 const canonical=origin+route;
 const schema=[{'@context':'https://schema.org','@type':type,name:title,url:canonical,description,inLanguage:'zh-CN',dateModified:date,publisher:{'@type':'Organization',name:'三毛机场',url:origin}},...extra];
 if(type==='Article'){Object.assign(schema[0],{headline:title,author:{'@type':'Organization',name:'三毛机场编辑'},datePublished:date});}
-const html=`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title><meta name="description" content="${esc(description)}"><meta name="keywords" content="${esc(keywords)}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${canonical}"><meta property="og:type" content="${type==='Article'?'article':'website'}"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="三毛机场"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(description)}"><meta name="theme-color" content="#0a172b"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css?v=library-6"><script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script><script src="/assets/app.js?v=library-6" defer></script></head><body><a href="#main" class="skip">跳到内容</a><header class="site-header"><div class="wrap header-inner">${nav}</div></header><main id="main">${body}</main>${footer}<div class="toast" role="status" aria-live="polite"></div></body></html>`;
+const html=`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title><meta name="description" content="${esc(description)}"><meta name="keywords" content="${esc(keywords)}"><meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="${canonical}"><meta property="og:type" content="${type==='Article'?'article':'website'}"><meta property="og:locale" content="zh_CN"><meta property="og:site_name" content="三毛机场"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(description)}"><meta name="theme-color" content="#0a172b"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/assets/style.css?v=navigation-7"><script type="application/ld+json">${JSON.stringify(schema).replace(/</g,'\\u003c')}</script><script src="/assets/app.js?v=navigation-7" defer></script></head><body id="top"><a href="#main" class="skip">跳到内容</a><header class="site-header"><div class="wrap header-inner">${nav}</div></header><main id="main">${body}</main>${footer}${navigationUI(body)}<div class="toast" role="status" aria-live="polite"></div></body></html>`;
 const dest=route==='/'?'index.html':route.replace(/^\//,'')+'index.html';fs.mkdirSync(path.dirname(path.join(out,dest)),{recursive:true});fs.writeFileSync(path.join(out,dest),html);routes.push({route,title,description,keywords});
 }
 const crumb=(label,parent='/')=>`<div class="wrap breadcrumb">${link('/','首页')}<span>/</span>${parent!=='/'?link('/guides/airport-ranking/','机场排行榜')+'<span>/</span>':''}<span>${esc(label)}</span></div>`;
@@ -80,5 +84,5 @@ fs.writeFileSync(path.join(out,'favicon.svg'),'<svg xmlns="http://www.w3.org/200
 fs.writeFileSync(path.join(out,'robots.txt'),`User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`);
 fs.writeFileSync(path.join(out,'sitemap.xml'),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+routes.map(r=>`<url><loc>${origin}${r.route}</loc><lastmod>${date}</lastmod></url>`).join('')+'</urlset>');
 fs.writeFileSync(path.join(root,'data/seo.json'),JSON.stringify(routes,null,2));
-fs.writeFileSync(path.join(out,'404.html'),`<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>页面未找到 - 三毛机场</title><link rel="stylesheet" href="/assets/style.css?v=library-6"><main class="wrap prose standalone"><h1>页面未找到</h1><p>这个地址暂时没有内容。</p><a class="button primary" href="/">回到首页</a></main></html>`);
+fs.writeFileSync(path.join(out,'404.html'),`<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>页面未找到 - 三毛机场</title><link rel="stylesheet" href="/assets/style.css?v=navigation-7"><main class="wrap prose standalone"><h1>页面未找到</h1><p>这个地址暂时没有内容。</p><a class="button primary" href="/">回到首页</a></main></html>`);
 console.log(`Built ${routes.length} indexable pages and 29 brand profiles.`);
