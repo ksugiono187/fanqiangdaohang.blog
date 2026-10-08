@@ -108,3 +108,40 @@ if (articleDialog) {
 
 const tocContent=document.querySelector('#article-toc .toc-content');
 if(tocContent){if(matchMedia('(max-width:700px)').matches)tocContent.open=false;document.querySelectorAll('a[href="#article-toc"]').forEach(a=>a.addEventListener('click',()=>{tocContent.open=true;}));}
+// Private reading preferences: stored only in this browser, never sent to a server.
+const readingHistory=document.querySelector('#reading-history');
+if(readingHistory){
+ const storageKey='sanmao.reading.v1',notice=readingHistory.querySelector('[data-reading-status]');
+ let reading={favorites:[],recent:[]},storageAvailable=true;
+ const valid=x=>x&&typeof x.route==='string'&&/^\/(blog|guides|brands)\/[a-z0-9\-/]+\/$/.test(x.route)&&typeof x.title==='string';
+ try{const saved=JSON.parse(localStorage.getItem(storageKey)||'null');if(saved){reading.favorites=(Array.isArray(saved.favorites)?saved.favorites:[]).filter(valid).slice(0,100);reading.recent=(Array.isArray(saved.recent)?saved.recent:[]).filter(valid).slice(0,20);}}catch{storageAvailable=false;}
+ const persist=()=>{try{localStorage.setItem(storageKey,JSON.stringify(reading));}catch{storageAvailable=false;}notice.textContent=storageAvailable?'记录只保存在当前浏览器。':'浏览器未允许持久保存，本次页面内仍可使用收藏。';};
+ const bookmark=document.querySelector('[data-bookmark]');
+ const current={route:location.pathname,title:document.querySelector('h1')?.textContent.trim()||document.title,progress:0,anchor:''};
+ const updateBookmark=()=>{if(!bookmark)return;const active=reading.favorites.some(x=>x.route===current.route);bookmark.setAttribute('aria-pressed',String(active));bookmark.textContent=active?'已收藏 ✓':'收藏本文';};
+ const drawList=(node,items,removable)=>{node.replaceChildren();if(!items.length){const empty=document.createElement('p');empty.className='reading-empty';empty.textContent=removable?'还没有收藏。在文章或品牌页面点击“收藏本文”。':'还没有阅读记录。打开文章、专题或品牌详情后会记录。';node.append(empty);return;}
+ items.forEach(item=>{const row=document.createElement('div');row.className='saved-reading-row';const a=document.createElement('a');a.href=item.route+(item.anchor&&/^[a-zA-Z0-9_-]+$/.test(item.anchor)?'#'+item.anchor:'');a.textContent=item.title;row.append(a);if(!removable){const p=document.createElement('small');p.textContent='阅读进度 '+Math.min(100,Math.max(0,Number(item.progress)||0))+'%';row.append(p);}else{const remove=document.createElement('button');remove.type='button';remove.textContent='取消收藏';remove.setAttribute('aria-label','取消收藏 '+item.title);remove.addEventListener('click',()=>{reading.favorites=reading.favorites.filter(x=>x.route!==item.route);persist();drawHistory();updateBookmark();});row.append(remove);}node.append(row);});};
+ const drawHistory=()=>{drawList(readingHistory.querySelector('[data-favorite-list]'),reading.favorites,true);drawList(readingHistory.querySelector('[data-recent-list]'),reading.recent,false);notice.textContent=storageAvailable?'记录只保存在当前浏览器。':'浏览器未允许持久保存，本次页面内仍可使用收藏。';};
+ document.querySelectorAll('[data-reading-open]').forEach(b=>b.addEventListener('click',()=>{if(articleDialog?.open)articleDialog.close();drawHistory();if(!readingHistory.open)readingHistory.showModal();}));
+ readingHistory.querySelector('[data-clear-recent]').addEventListener('click',()=>{reading.recent=[];persist();drawHistory();});
+ if(bookmark){updateBookmark();bookmark.addEventListener('click',()=>{if(reading.favorites.some(x=>x.route===current.route))reading.favorites=reading.favorites.filter(x=>x.route!==current.route);else reading.favorites.unshift({...current});reading.favorites=reading.favorites.slice(0,100);persist();updateBookmark();});}
+ const prose=document.querySelector('.article-grid>.prose'),bar=document.querySelector('.reading-progress');
+ if(prose&&valid(current)){
+  const previous=reading.recent.find(x=>x.route===current.route);reading.recent=[{...current,...(previous||{}),title:current.title},...reading.recent.filter(x=>x.route!==current.route)].slice(0,20);persist();bar.hidden=false;
+  let pending=false,timer;
+  const saveProgress=()=>{const record=reading.recent.find(x=>x.route===current.route);if(record)Object.assign(record,current);persist();};
+  const paint=()=>{pending=false;const rect=prose.getBoundingClientRect(),distance=Math.max(1,prose.offsetHeight-innerHeight+120);const value=Math.max(0,Math.min(100,Math.round((120-rect.top)/distance*100)));current.progress=value;const passed=[...prose.querySelectorAll('section[id]')].filter(s=>s.getBoundingClientRect().top<=160);current.anchor=passed.length?passed[passed.length-1].id:'';bar.querySelector('span').style.width=value+'%';bar.setAttribute('aria-valuenow',String(value));};
+  addEventListener('scroll',()=>{if(!pending){pending=true;requestAnimationFrame(paint);}clearTimeout(timer);timer=setTimeout(saveProgress,800);},{passive:true});
+  addEventListener('pagehide',saveProgress);paint();
+ }
+}
+const correctionForm=document.querySelector('[data-correction-form]');
+if(correctionForm){
+ const source=correctionForm.querySelector('[name=page]'),details=correctionForm.querySelector('[name=details]'),type=correctionForm.querySelector('[name=type]');
+ const requested=new URLSearchParams(location.search).get('page');
+ if(requested&&/^\/[a-z0-9/?=#,_-]*$/i.test(requested))source.value=location.origin+requested;
+ const body=()=>`页面：${source.value.trim()}\n类型：${type.value}\n\n需要更正的内容与公开依据：\n${details.value.trim()}\n\n请核对价格、流量、周期或链接后更新。`;
+ const status=correctionForm.querySelector('[data-correction-status]');
+ correctionForm.addEventListener('submit',e=>{e.preventDefault();if(!correctionForm.reportValidity())return;const url=new URL('https://github.com/ksugiono187/fanqiangdaohang.blog/issues/new');url.searchParams.set('title','资料更正：'+type.value);url.searchParams.set('body',body());const link=correctionForm.querySelector('[data-correction-link]');link.href=url.href;link.hidden=false;status.textContent='反馈草稿已生成。点击下方按钮，在GitHub核对并提交；本站尚未发送。';});
+ correctionForm.querySelector('[data-correction-copy]').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(body());status.textContent='已复制反馈文字，可自行保存或提交。';}catch{status.textContent='复制失败，请手动复制表单中的文字。';}});
+}

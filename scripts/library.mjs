@@ -1,3 +1,4 @@
+import {researchSections} from './research-cases.mjs';
 // Editorial lenses written for each brand: budget, usage, compatibility, observation, purchase.
 // Reference fields are attributed to the owner's source, never combined into a verified package.
 export const lenses={
@@ -9,7 +10,7 @@ breezenet:[
 'weifeng90是站长提供的微风优惠码。核对重点是它是否适用于准备购买的周期，以及续费是否仍可使用；优惠只在订单显示减免后计入预算。请通过品牌详情保存的入口核对账户和套餐名称。'],
 flycat:[
 '飞猫约7元的参考月成本来自年付折算。这里首先要解决的是一次性支出，而非与7元月付直接比较。将全年实付金额、计划使用月数和可能更换服务的成本同时列出，才能判断长期方案是否适合。',
-'150GB的来源字段没有说明重置周期。飞猫的小流量入门定位和这项参考值应分别理解；先确认具体档位的月度额度，再判断浏览、视频和备用需求能否共同覆盖。',
+'飞猫旧博客品牌页明确描述每月150GB，已补齐这一周期线索。是否对应约7元年付折算的同一档位仍需确认；再按浏览、视频和备用需求估算真实月度消耗，不把不同订单的字段混合。',
 '资料同时出现IEPL/IPLC、优质中转和Shadowsocks/V2Ray。飞猫不能按单一线路概括所有节点；应逐地区询问路线，并检查同一订阅是否包含不同协议，避免只安装一种导入方式后误判兼容性。',
 '飞猫的观察重点是低成本方案的权限边界。先检查该档位能否使用常用地区，再分别记录专线描述节点与中转描述节点的任务完成情况；观察结果必须保留套餐名称，不能扩展到全部方案。',
 'flycat888的实际价值取决于年付订单能否使用、是否限定新账户以及续费价。记录原价和优惠后总额，不用优惠后的年均成本代替正常续费预算；付款前确认退款和套餐升级规则。'],
@@ -191,15 +192,16 @@ export function expandedPosts(c){
  const {brands,esc,link}=c;
  const articles=[];
  for(const b of brands)for(const [i,a] of angles.entries()){
-  const next=brands[(b.rank)%brands.length];
+  const research=researchSections(b,a.slug,c);
+  const next=research.peer;
   const title=b.name+' '+a.suffix;
   const insight=lenses[b.slug][i];
   articles.push({slug:b.slug+'-'+a.slug,title,category:a.category,description:insight.slice(0,94)+'本文附参考参数、核对步骤与品牌详情。',brand:b.slug,sections:[
   ['focus',a.focus,`<p>${esc(insight)}</p>`],
   ['reference','品牌参考参数与资料口径',parameters(b,c)],
-  ['method',a.method[0],`<p>${esc(a.method[1])}</p><p>应用到${esc(b.name)}时，重点核对：${esc(b.check)} 这个项目需要与当前订单对照，不能仅从旧文章标题获得答案。</p>`],
-  ['action',a.action[0],`<p>${esc(a.action[1])}</p><div class="analysis-summary"><strong>本次决策清单</strong><p>${esc(a.question)}</p></div>`],
-  ['comparison','怎样与另一候选进行比较',`<p>可以先将${link('/brands/'+b.slug+'/',b.name)}与${link('/brands/'+next.slug+'/',next.name)}放入${link('/compare/?brands='+b.slug+','+next.slug,'双品牌对比')}。${next.reference?'另一候选来源参考价为「'+esc(next.reference.price)+'」，参考流量为「'+esc(next.reference.traffic)+'」。':'另一候选的价格与流量资料仍待补充。'}两家都取得实际订单后，再按本篇的「${esc(a.category)}」维度判断差异；目录相邻位置不表示性能相近，也不构成互相替代的保证。</p>`]
+  ['method',a.method[0],research.method],
+  ['action',a.action[0],research.action],
+  ['comparison','怎样与另一候选进行比较',`<p>可以先将${link('/brands/'+b.slug+'/',b.name)}与${link('/brands/'+next.slug+'/',next.name)}放入${link('/compare/?brands='+b.slug+','+next.slug,'双品牌对比')}。${next.reference?'另一候选来源参考价为「'+esc(next.reference.price)+'」，参考流量为「'+esc(next.reference.traffic)+'」。':'另一候选的价格与流量资料仍待补充。'}两家都取得实际订单后，再按本篇的「${esc(a.category)}」维度判断差异；相关候选按选购问题匹配，不表示性能相近，也不构成互相替代的保证。</p>`]
   ],topic:a.topic});
  }
  const general=[

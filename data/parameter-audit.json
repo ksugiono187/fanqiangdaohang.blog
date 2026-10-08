@@ -1,0 +1,52 @@
+{
+  "checked": "2026-10-08",
+  "rows": [
+    {
+      "slug": "flycat",
+      "trafficCycle": "来源品牌页明确每月150GB",
+      "sourceUrl": "https://jichang-tuijian.org/brands/flycat",
+      "evidence": "品牌页描述：每月畅享150GB流量。",
+      "status": "source-clarified"
+    },
+    {
+      "slug": "breezenet",
+      "status": "unresolved",
+      "note": "公开入口未直接展示可读取的套餐表；没有充分依据补齐流量周期或同档配对。"
+    },
+    {
+      "slug": "dalaocloud",
+      "status": "unresolved",
+      "note": "公开入口未直接展示可读取的套餐表；没有充分依据补齐流量周期或同档配对。"
+    },
+    {
+      "slug": "lightspeed",
+      "status": "unresolved",
+      "note": "公开入口未直接展示可读取的套餐表；没有充分依据补齐流量周期或同档配对。"
+    },
+    {
+      "slug": "2mao",
+      "status": "unresolved",
+      "note": "公开入口未直接展示可读取的套餐表；没有充分依据补齐流量周期或同档配对。"
+    },
+    {
+      "slug": "edgenova",
+      "status": "unresolved",
+      "note": "公开入口未直接展示可读取的套餐表；没有充分依据补齐流量周期或同档配对。"
+    },
+    {
+      "slug": "sujie",
+      "status": "unresolved",
+      "note": "公开入口未直接展示可读取的套餐表；没有充分依据补齐流量周期或同档配对。"
+    },
+    {
+      "slug": "flyv",
+      "status": "unresolved",
+      "note": "公开入口未直接展示可读取的套餐表；没有充分依据补齐流量周期或同档配对。"
+    },
+    {
+      "slug": "laddercloud",
+      "status": "unresolved",
+      "note": "公开入口未直接展示可读取的套餐表；没有充分依据补齐流量周期或同档配对。"
+    }
+  ]
+}
