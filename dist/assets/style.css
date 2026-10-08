@@ -10,3 +10,24 @@ body{background-color:#f4f7fa;background-image:radial-gradient(circle at 1px 1px
 @keyframes star-breathe{from{opacity:.55}to{opacity:1}}
 @media(max-width:700px){.hero::before{background-position:67% top;background-size:auto 100%;opacity:.65}.hero-aside{padding:20px}.hero::after{background-size:100% 100%,173px 163px,251px 211px,197px 181px}}
 @media(prefers-reduced-motion:reduce){.hero::before,.hero::after{animation:none}}
+/* One animated scene stays behind every route and every scroll position. */
+body{position:relative;isolation:isolate;background:#0c1930;background-image:none;}
+body::before,body::after{content:'';position:fixed;pointer-events:none;z-index:-1;inset:-70px;}
+body::before{background: url('/assets/celestial-pattern.svg') center/cover no-repeat,radial-gradient(ellipse at 80% 15%,#57518980,transparent 55%),linear-gradient(130deg,#0a172b,#203856);animation:sky-float 9s ease-in-out infinite alternate;}
+body::after{background-image:radial-gradient(circle,#c2fff0 0 2px,transparent 3px),radial-gradient(circle,#e6dfff 0 1px,transparent 2px),radial-gradient(ellipse at 10% 90%,#6c99cf44,transparent 40%),radial-gradient(ellipse at 90% 80%,#9696d33b,transparent 40%);background-size:179px 193px,257px 239px,100% 100%,100% 100%;animation:sky-stars 12s linear infinite,sky-shimmer 3s ease-in-out infinite alternate;opacity:.7;}
+.hero{background:transparent;isolation:auto;overflow:visible;}
+.hero::before,.hero::after{display:none;}
+.site-header,footer{background:#09162bc4;backdrop-filter:blur(12px);}
+.topic-bar{background:#edf6f4e8;}
+.disclosure{color:#d1dfe9;}.disclosure a{color:#adf4dc;}
+.section-heading h2{color:#f1f6ff;}.section-heading>.muted{color:#c4d6e8;}.section-heading .eyebrow{color:#a7ecd7;}
+.brand-card{background:#f9fcfff0;border-color:#cee0ee75;box-shadow:0 10px 35px #020b2029;}
+.guide-card{background:#e8eff4ee;}
+.breadcrumb{color:#e3ecf5;}.breadcrumb a:hover{color:var(--mint);}
+.article-head,.brand-head,.standalone,.article-grid>.prose{background:#f6f9fcf2;border:1px solid #d9e6f0aa;border-radius:16px;padding:30px;box-shadow:0 12px 40px #020b2026;}
+.article-head,.brand-head{margin-top:28px;margin-bottom:26px;}.standalone{margin-top:28px;margin-bottom:50px;}.toc{background:#f9fcfff2;}
+@keyframes sky-float{0%{transform:translate3d(-22px,-15px,0) scale(1.02)}100%{transform:translate3d(25px,25px,0) scale(1.06)}}
+@keyframes sky-stars{from{background-position:0 0,0 0,0 0,0 0}to{background-position:179px -193px,-257px -239px,0 0,0 0}}
+@keyframes sky-shimmer{from{opacity:.35}to{opacity:.85}}
+@media(max-width:700px){body::before{background-position:65% center}.article-head,.brand-head,.standalone,.article-grid>.prose{padding:22px;}}
+@media(prefers-reduced-motion:reduce){body::before,body::after{animation:none}}
