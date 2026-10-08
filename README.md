@@ -32,3 +32,9 @@ npm run preview
 GitHub Pages 工作流使用 `dist/` 作为发布目录。启用仓库 Settings → Pages → GitHub Actions，并按 `docs/上线与Bing.md` 配置域名。
 
 `.openai/hosting.json` 用于 Sites 预览发布；GitHub Pages 使用独立工作流，两者都可部署相同静态内容。正式域名应该仅选择一个托管目标。
+
+## 文章库与十品牌专题
+
+新增150篇文章：29品牌各5篇专项研究（145篇），跨品牌方法研究5篇。保留原有5篇基础文章，博客共155篇。15个分页目录，每页10篇新增研究；6个专题每页只展开10个候选，入选后保持原始相对顺序。全站共211个可索引页面，sitemap覆盖全部。
+
+编辑源为 scripts/library.mjs；品牌研究角度在 lenses 中分别维护，专题排序理由在 topicConclusions 中逐条维护。文章清单在 data/article-library.json。价格和流量保留来源文字，未同档不计算单位成本；大佬云参数待补充。
