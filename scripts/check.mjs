@@ -21,8 +21,10 @@ for(const slug of ['airport-recommendations','airport-recommendations-2026','sta
 assert.equal(brands.length,29);assert.equal(brands.filter(b=>b.coupon).length,11);
 assert.equal(new Set(brands.map(b=>b.url)).size,29);
 assert.equal(new Set(brands.map(b=>b.slug)).size,29);
-assert.equal(brands.filter(b=>b.reference).length,28,'Reference source must match 28 requested brands');
-assert.deepEqual(brands.filter(b=>!b.reference).map(b=>b.slug),['dalaocloud']);
+assert.equal(brands.filter(b=>b.reference).length,29,'All brands now have reference parameters');
+assert.equal(brands.find(b=>b.slug==='dalaocloud').reference.price,'￥23');
+assert.equal(brands.find(b=>b.slug==='dalaocloud').reference.traffic,'130GB');
+assert.equal(brands.find(b=>b.slug==='dalaocloud').reference.priceBasis,'付款周期待确认');
 for(const b of brands){if(!b.reference)continue;const profile=fs.readFileSync(path.join(out,'brands',b.slug,'index.html'),'utf8');assert(profile.includes(b.reference.price),'Missing reference price: '+b.slug);assert(profile.includes(b.reference.traffic),'Missing reference traffic: '+b.slug);assert(profile.includes(b.reference.sourceUrl),'Missing reference source: '+b.slug);}
 assert.equal(brands.find(b=>b.slug==='flycat').reference.priceBasis,'年付折算月价');
 assert.equal(brands.find(b=>b.slug==='edgenova').reference.priceBasis,'年付起价');

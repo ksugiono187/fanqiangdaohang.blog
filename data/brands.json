@@ -116,16 +116,34 @@
     "name": "大佬云",
     "url": "https://vip.dalaocloud.com/#/?code=Cp2sfYZg",
     "coupon": "",
-    "advantage": "轻量套餐定位",
-    "audience": "优先控制总预算的用户",
-    "check": "第三方资料的年付折算价与常规月价不同，购买前按实际付款周期核对。",
+    "advantage": "130GB · ￥23套餐参考",
+    "audience": "希望比较130GB套餐的用户",
+    "check": "核对130GB、￥23套餐的付款周期、流量重置与有效期；线路和协议仍需补充。",
     "source": [
+      "站长直接提供的价格与流量",
+      "/about/"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "name": "大佬云",
+      "price": "￥23",
+      "traffic": "130GB",
+      "priceBasis": "付款周期待确认",
+      "trafficCycle": "流量周期待确认",
+      "line": "待确认",
+      "protocol": "待确认",
+      "position": "130GB 套餐参考",
+      "audience": "希望比较130GB套餐的用户",
+      "sourceUrl": "/about/",
+      "retrieved": "2026-10-08",
+      "provenance": "owner",
+      "pairing": "站长直接提供：130GB、￥23；付款周期与流量周期待确认"
+    },
+    "previousSource": [
       "机场决策室 · 大佬云资料",
       "https://jichangtuijian.homes/iepl-airport/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08",
-    "reference": null
+    ]
   },
   {
     "rank": 5,

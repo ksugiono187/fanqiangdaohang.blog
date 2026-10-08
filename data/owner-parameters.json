@@ -1,0 +1,17 @@
+{
+  "dalaocloud": {
+    "name": "大佬云",
+    "price": "￥23",
+    "traffic": "130GB",
+    "priceBasis": "付款周期待确认",
+    "trafficCycle": "流量周期待确认",
+    "line": "待确认",
+    "protocol": "待确认",
+    "position": "130GB 套餐参考",
+    "audience": "希望比较130GB套餐的用户",
+    "sourceUrl": "/about/",
+    "retrieved": "2026-10-08",
+    "provenance": "owner",
+    "pairing": "站长直接提供：130GB、￥23；付款周期与流量周期待确认"
+  }
+}
