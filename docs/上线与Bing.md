@@ -19,7 +19,7 @@
 
 ## 正式上线
 
-正式 canonical 与 sitemap 使用 https://fanqiangdaohang.blog 。正式域名应解析到你选定的托管服务；预览地址不代表该域名已经上线。必须确认正式域名可以公开访问且不会要求登录。
+正式 canonical 与 sitemap 使用 https://fanqiangdaohang.blog 。2026-10-08 已通过 GitHub Pages 发布并绑定 Cloudflare DNS，HTTPS 首页、品牌页、robots 和 sitemap 已公开返回 HTTP 200。网站地图包含 38 个 URL。
 
 ### GitHub Pages 选项
 
@@ -46,3 +46,7 @@ Sites 预览默认只供所有者访问。正式使用前需改为公开访问�
 ## 持续维护
 
 核对套餐时应记录官方出处、实际付款周期、节点倍率及查询日期；取得独立测试记录后再补充速度和稳定性结论。更新源文件中的日期，然后重新生成 sitemap；不要每次构建都把未核对的内容自动标为“今天验证”。
+
+
+## 实际提交记录
+2026-10-08：Bing DNS 所有权验证通过，https://fanqiangdaohang.blog/sitemap.xml 已提交，后台状态为 Processing。已保存截图 Bing网站地图提交.jpg。提交不代表收录。
