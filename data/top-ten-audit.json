@@ -1,0 +1,97 @@
+{
+  "checked": "2026-10-08",
+  "method": "读取站长提供的前十品牌公开入口；未登录或购买",
+  "rows": [
+    {
+      "slug": "breezenet",
+      "name": "微风网络 Breezenet",
+      "url": "https://edp01.breezenetaff.com/#/?code=4KDOroY0",
+      "status": 200,
+      "title": "线路检测",
+      "visibleText": "线路检测 线路检测 目标网址检测将在本页面内自动完成：自动选择最快可用目标展示到推荐区，其余目标按结果与延迟展示在列表中。 暗色 推荐目标 检测中… 延迟 - 状态 - 自动跳转 - 重新检测 访问 检测目标网址 共 0 个 显示更多 目标网址 状态 延迟 操作",
+      "parameterStatus": "公开入口HTML没有套餐字段，无法据此确认套餐名称、周期、倍率或设备限制"
+    },
+    {
+      "slug": "flycat",
+      "name": "飞猫云",
+      "url": "https://flycat1.flycatvipaff.cc/#/?code=Os3T3OxW",
+      "status": 200,
+      "title": "线路检测",
+      "visibleText": "线路检测 线路检测 目标网址检测将在本页面内自动完成：自动选择最快可用目标展示到推荐区，其余目标按结果与延迟展示在列表中。 暗色 推荐目标 检测中… 延迟 - 状态 - 重新检测 访问 检测目标网址 共 0 个 显示更多 目标网址 状态 延迟 操作",
+      "parameterStatus": "已到达飞猫云进入前确认页，未读取账户套餐表",
+      "browserObservation": "浏览器跳转后显示飞猫云，进入前要求同意服务条款与隐私政策；未继续进入"
+    },
+    {
+      "slug": "twilight",
+      "name": "暮光网络",
+      "url": "https://varnexa.twilightaff.com/#/?code=3qqonTlH",
+      "status": 200,
+      "title": "暮光加速 线路检测",
+      "visibleText": "暮光加速 线路检测 -->",
+      "parameterStatus": "公开入口HTML没有套餐字段，无法据此确认套餐名称、周期、倍率或设备限制"
+    },
+    {
+      "slug": "dalaocloud",
+      "name": "大佬云",
+      "url": "https://vip.dalaocloud.com/#/?code=Cp2sfYZg",
+      "status": 200,
+      "title": "大佬云线路检测",
+      "visibleText": "大佬云线路检测",
+      "parameterStatus": "公开入口HTML没有套餐字段，无法据此确认套餐名称、周期、倍率或设备限制"
+    },
+    {
+      "slug": "firefly",
+      "name": "Firefly机场",
+      "url": "https://vip02.fireflyaff.com/#/?code=Fes6j9rn",
+      "status": 200,
+      "title": "线路检测",
+      "visibleText": "线路检测 线路检测 目标网址检测将在本页面内自动完成：自动选择最快可用目标展示到推荐区，其余目标按结果与延迟展示在列表中。 暗色 推荐目标 检测中… 延迟 - 状态 - 自动跳转 - 重新检测 访问 检测目标网址 共 0 个 显示更多 目标网址 状态 延迟 操作",
+      "parameterStatus": "公开入口HTML没有套餐字段，无法据此确认套餐名称、周期、倍率或设备限制"
+    },
+    {
+      "slug": "civet",
+      "name": "灵猫",
+      "url": "https://vip02.civetaff.com/#/?code=kZlRw46w",
+      "status": 200,
+      "title": "线路检测",
+      "visibleText": "线路检测 线路检测 目标网址检测将在本页面内自动完成：自动选择最快可用目标展示到推荐区，其余目标按结果与延迟展示在列表中。 暗色 推荐目标 检测中… 延迟 - 状态 - 自动跳转 - 重新检测 访问 检测目标网址 共 0 个 显示更多 目标网址 状态 延迟 操作",
+      "parameterStatus": "公开入口HTML没有套餐字段，无法据此确认套餐名称、周期、倍率或设备限制"
+    },
+    {
+      "slug": "flashleap",
+      "name": "闪跃 FlashLeap",
+      "url": "https://vip02.flashleapaff.com/#/?code=FkCGEeaC",
+      "status": 200,
+      "title": "线路检测",
+      "visibleText": "线路检测 线路检测 目标网址检测将在本页面内自动完成：自动选择最快可用目标展示到推荐区，其余目标按结果与延迟展示在列表中。 暗色 推荐目标 检测中… 延迟 - 状态 - 自动跳转 - 重新检测 访问 检测目标网址 共 0 个 显示更多 目标网址 状态 延迟 操作",
+      "parameterStatus": "公开入口HTML没有套餐字段，无法据此确认套餐名称、周期、倍率或设备限制"
+    },
+    {
+      "slug": "worryfree",
+      "name": "无忧链接",
+      "url": "https://wep01.worryfreeaff.com/#/?code=56A0RTpU",
+      "status": 200,
+      "title": "线路检测",
+      "visibleText": "线路检测 线路检测 目标网址检测将在本页面内自动完成：自动选择最快可用目标展示到推荐区，其余目标按结果与延迟展示在列表中。 暗色 推荐目标 检测中… 延迟 - 状态 - 自动跳转 - 重新检测 访问 检测目标网址 共 0 个 显示更多 目标网址 状态 延迟 操作",
+      "parameterStatus": "公开入口HTML没有套餐字段，无法据此确认套餐名称、周期、倍率或设备限制"
+    },
+    {
+      "slug": "kuajie",
+      "name": "跨界云",
+      "url": "https://vip02.kuajieaff.com/#/?code=VfWeYwHM",
+      "status": 200,
+      "title": "线路检测",
+      "visibleText": "线路检测 线路检测 目标网址检测将在本页面内自动完成：自动选择最快可用目标展示到推荐区，其余目标按结果与延迟展示在列表中。 暗色 推荐目标 检测中… 延迟 - 状态 - 自动跳转 - 重新检测 访问 检测目标网址 共 0 个 显示更多 目标网址 状态 延迟 操作",
+      "parameterStatus": "公开入口HTML没有套餐字段，无法据此确认套餐名称、周期、倍率或设备限制"
+    },
+    {
+      "slug": "stardream",
+      "name": "星岛梦 StarDream",
+      "url": "https://kfccbb.xingdaomeng.com/#/?code=JTRIWFim",
+      "status": 200,
+      "title": "线路检测",
+      "visibleText": "线路检测 线路检测 目标网址检测将在本页面内自动完成：自动选择最快可用目标展示到推荐区，其余目标按结果与延迟展示在列表中。 暗色 推荐目标 检测中… 延迟 - 状态 - 自动跳转 - 重新检测 访问 检测目标网址 共 0 个 显示更多 目标网址 状态 延迟 操作",
+      "parameterStatus": "公开入口HTML没有套餐字段，无法据此确认套餐名称、周期、倍率或设备限制"
+    }
+  ]
+}

@@ -141,17 +141,17 @@ if(finder){
  const rows=JSON.parse(document.getElementById('finder-data').textContent);
  const results=document.querySelector('[data-finder-results]');
  const render=()=>{
-  const budget=Number(finder.elements.budget.value),traffic=Number(finder.elements.traffic.value),devices=Number(finder.elements.devices.value);
+  const budget=Number(finder.elements.budget.value),traffic=Number(finder.elements.traffic.value);
   const groups={candidate:[],pending:[]};let excluded=0;
   for(const r of rows){const missing=[];const amount=Number(r.price.replace(/,/g,'').match(/[\d.]+/)?.[0]);const gb=Number(r.traffic.match(/([\d.]+)GB/i)?.[1]);
    if(budget&&r.price.includes('/月')&&amount>budget||traffic&&/每月/.test(r.trafficCycle)&&gb&&gb<traffic){excluded++;continue;}
-   if(budget&&!r.price.includes('/月'))missing.push('月均参考价');if(traffic&&(!/每月/.test(r.trafficCycle)||!gb))missing.push('月度流量');if(devices)missing.push('设备限制');
+   if(budget&&!r.price.includes('/月'))missing.push('月均参考价');if(traffic&&(!/每月/.test(r.trafficCycle)||!gb))missing.push('月度流量');
    groups[missing.length?'pending':'candidate'].push({r,missing});
   }
   results.replaceChildren();
-  for(const [key,title] of [['candidate','符合已知参考条件'],['pending','资料待确认']]){const section=document.createElement('section'),heading=document.createElement('h2');heading.textContent=title+'（'+groups[key].length+'）';section.append(heading);
+  for(const [key,title] of [['candidate','参考字段符合条件，套餐仍需核对'],['pending','资料待确认']]){const section=document.createElement('section'),heading=document.createElement('h2');heading.textContent=title+'（'+groups[key].length+'）';section.append(heading);
    if(!groups[key].length){const p=document.createElement('p');p.textContent=key==='candidate'?'当前没有符合已知条件的候选，可放宽条件或查看待确认资料。':'没有待确认的匹配记录。';section.append(p);}
-   for(const {r,missing} of groups[key]){const card=document.createElement('div');card.className='finder-card';const a=document.createElement('a');a.href='/brands/'+r.slug+'/';a.textContent=r.name;const p=document.createElement('p');p.textContent=r.price+' · '+r.traffic+' · '+r.trafficCycle;const note=document.createElement('small');note.textContent=missing.length?'需要确认：'+missing.join('、'):r.priceBasis+'；购买前核对同一套餐与实际付款总额';card.append(a,p,note);section.append(card);}results.append(section);
+   for(const {r,missing} of groups[key]){const card=document.createElement('div');card.className='finder-card';const a=document.createElement('a');a.href='/brands/'+r.slug+'/';a.textContent=r.name;const p=document.createElement('p');p.textContent=r.price+' · '+r.traffic+' · '+r.trafficCycle;const note=document.createElement('small');note.textContent=missing.length?'需要确认：'+missing.join('、'):r.priceBasis+'；购买前核对同一套餐与实际付款总额';const pairing=document.createElement('p');pairing.className='pairing-alert';pairing.textContent=r.provenance==='owner'?'价格与流量：站长提供配对；付款与流量周期待确认。':'价格与流量未确认属于同一套餐，不能据此判断套餐满足预算和用量。';card.append(a,p,pairing,note);section.append(card);}results.append(section);
   }
   document.querySelector('[data-finder-status]').textContent='候选 '+groups.candidate.length+' 个 · 待确认 '+groups.pending.length+' 个 · 已知条件不符 '+excluded+' 个';
  };

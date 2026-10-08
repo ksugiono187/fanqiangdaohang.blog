@@ -52,3 +52,6 @@ const report=`验证通过：217 个可索引页面、29 个品牌、11 个优�
 fs.writeFileSync(path.join(root,'docs/验证报告.txt'),report);console.log(report);
 
 for(const route of ['plans','finder','updates','usage-records'])assert(seo.some(r=>r.route==='/'+route+'/'));
+
+const plansHtml=fs.readFileSync(path.join(out,'plans/index.html'),'utf8');assert.equal((plansHtml.match(/data-mobile-plan=/g)||[]).length,29);
+const finderHtml=fs.readFileSync(path.join(out,'finder/index.html'),'utf8');assert(!finderHtml.includes('name="devices"'));assert(finderHtml.includes('设备筛选暂未开放'));

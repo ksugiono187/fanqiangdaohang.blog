@@ -1,8 +1,8 @@
 {
   "endpoint": "https://api.indexnow.org/indexnow",
   "response": "",
-  "submittedAt": "2026-10-08T08:53:19.426Z",
-  "urls": 213,
+  "submittedAt": "2026-10-08T09:10:04.021Z",
+  "urls": 217,
   "httpStatus": 200,
   "result": "received",
   "note": "Received does not mean indexed or ranked."
