@@ -38,3 +38,27 @@ if (compareInputs.length) {
   });
   paint();
 }
+// Catalog discovery filters data while keeping the publisher's directory order.
+const catalog = document.querySelector('#brands');
+if (catalog) {
+  const search = catalog.querySelector('[data-brand-query]');
+  const filters = [...catalog.querySelectorAll('[data-brand-filter]')];
+  const cards = [...catalog.querySelectorAll('.brand-card[data-brand-search]')];
+  let category = 'all';
+  const updateCatalog = () => {
+    const query = search.value.trim().toLocaleLowerCase();
+    let visible = 0;
+    cards.forEach(card => {
+      const matchesQuery = card.dataset.brandSearch.toLocaleLowerCase().includes(query);
+      const matchesCategory = category === 'all' || card.dataset.brandCategory.split(' ').includes(category);
+      card.hidden = !(matchesQuery && matchesCategory);
+      if (!card.hidden) visible++;
+    });
+    catalog.querySelector('[data-brand-status]').textContent = `${visible} / ${cards.length} 个品牌 · 保持目录顺序`;
+    catalog.querySelector('[data-brand-empty]').hidden = visible !== 0;
+    filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.brandFilter === category)));
+  };
+  search.addEventListener('input', updateCatalog);
+  filters.forEach(button => button.addEventListener('click', () => { category = button.dataset.brandFilter; updateCatalog(); }));
+  updateCatalog();
+}
