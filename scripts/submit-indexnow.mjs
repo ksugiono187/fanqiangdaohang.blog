@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+const config=JSON.parse(fs.readFileSync(new URL('../data/indexnow.json',import.meta.url),'utf8'));
+const origin='https://'+config.host,keyLocation=origin+'/'+config.key+'.txt';
+const proof=await fetch(keyLocation);
+if(!proof.ok||(await proof.text()).trim()!==config.key)throw Error('Domain proof is not yet published');
+const response=await fetch(origin+'/sitemap.xml');
+if(!response.ok)throw Error('Live sitemap is unavailable');
+const urlList=[...(await response.text()).matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+if(!urlList.length||urlList.some(u=>!u.startsWith(origin+'/')))throw Error('Invalid sitemap URLs');
+const submitted=await fetch('https://www.bing.com/indexnow',{method:'POST',headers:{'Content-Type':'application/json; charset=utf-8'},body:JSON.stringify({host:config.host,key:config.key,keyLocation,urlList})});
+const report={submittedAt:new Date().toISOString(),urls:urlList.length,httpStatus:submitted.status,result:submitted.status===200?'received':submitted.status===202?'received-key-validation-pending':'failed',note:'Received does not mean indexed or ranked.'};
+fs.writeFileSync(new URL('../docs/IndexNow提交记录.json',import.meta.url),JSON.stringify(report,null,2));
+console.log(JSON.stringify(report));
+if(![200,202].includes(submitted.status))throw Error('IndexNow rejected request: '+submitted.status);

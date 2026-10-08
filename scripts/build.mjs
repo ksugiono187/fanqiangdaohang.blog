@@ -6,6 +6,7 @@ import {homepage} from './homepage.mjs';
 import {renderTenBrandGuide,expandedPosts} from './library.mjs';
 import {readingTools,navigationUI} from './navigation.mjs';
 const root=path.resolve(import.meta.dirname,'..'), out=path.join(root,'dist');
+const indexNow=JSON.parse(fs.readFileSync(path.join(root,'data/indexnow.json'),'utf8'));fs.writeFileSync(path.join(out,indexNow.key+'.txt'),indexNow.key);
 const origin='https://fanqiangdaohang.blog', date='2026-10-08';
 const raw=[
 ['breezenet','微风网络 Breezenet','https://edp01.breezenetaff.com/#/?code=4KDOroY0','weifeng90','周期与不限时选择','不固定使用时长的用户','先比较按月流量与一次性流量的有效期，确认是否允许流量重置。',0],
