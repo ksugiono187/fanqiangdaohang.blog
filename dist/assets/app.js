@@ -136,6 +136,38 @@ if(readingHistory){
  }
 }
 const correctionForm=document.querySelector('[data-correction-form]');
+const finder=document.querySelector('[data-finder]');
+if(finder){
+ const rows=JSON.parse(document.getElementById('finder-data').textContent);
+ const results=document.querySelector('[data-finder-results]');
+ const render=()=>{
+  const budget=Number(finder.elements.budget.value),traffic=Number(finder.elements.traffic.value),devices=Number(finder.elements.devices.value);
+  const groups={candidate:[],pending:[]};let excluded=0;
+  for(const r of rows){const missing=[];const amount=Number(r.price.replace(/,/g,'').match(/[\d.]+/)?.[0]);const gb=Number(r.traffic.match(/([\d.]+)GB/i)?.[1]);
+   if(budget&&r.price.includes('/月')&&amount>budget||traffic&&/每月/.test(r.trafficCycle)&&gb&&gb<traffic){excluded++;continue;}
+   if(budget&&!r.price.includes('/月'))missing.push('月均参考价');if(traffic&&(!/每月/.test(r.trafficCycle)||!gb))missing.push('月度流量');if(devices)missing.push('设备限制');
+   groups[missing.length?'pending':'candidate'].push({r,missing});
+  }
+  results.replaceChildren();
+  for(const [key,title] of [['candidate','符合已知参考条件'],['pending','资料待确认']]){const section=document.createElement('section'),heading=document.createElement('h2');heading.textContent=title+'（'+groups[key].length+'）';section.append(heading);
+   if(!groups[key].length){const p=document.createElement('p');p.textContent=key==='candidate'?'当前没有符合已知条件的候选，可放宽条件或查看待确认资料。':'没有待确认的匹配记录。';section.append(p);}
+   for(const {r,missing} of groups[key]){const card=document.createElement('div');card.className='finder-card';const a=document.createElement('a');a.href='/brands/'+r.slug+'/';a.textContent=r.name;const p=document.createElement('p');p.textContent=r.price+' · '+r.traffic+' · '+r.trafficCycle;const note=document.createElement('small');note.textContent=missing.length?'需要确认：'+missing.join('、'):r.priceBasis+'；购买前核对同一套餐与实际付款总额';card.append(a,p,note);section.append(card);}results.append(section);
+  }
+  document.querySelector('[data-finder-status]').textContent='候选 '+groups.candidate.length+' 个 · 待确认 '+groups.pending.length+' 个 · 已知条件不符 '+excluded+' 个';
+ };
+ finder.addEventListener('change',render);finder.addEventListener('reset',()=>setTimeout(render,0));render();
+}
+const usageForm=document.querySelector('[data-usage-form]');
+if(usageForm){
+ const key='sanmao-usage-v1',list=document.querySelector('[data-usage-list]'),status=document.querySelector('[data-usage-status]');let records=[];
+ try{const saved=JSON.parse(localStorage.getItem(key)||'[]');records=Array.isArray(saved)?saved.filter(r=>r&&typeof r.id==='string'&&['brand','date','device','network','node','result'].every(k=>typeof r[k]==='string')).slice(0,100):[];}catch{status.textContent='无法读取本机记录。';}
+ const save=()=>{try{localStorage.setItem(key,JSON.stringify(records));return true;}catch{status.textContent='浏览器无法保存，请使用导出记录保留资料。';return false;}};
+ const render=()=>{list.replaceChildren();if(!records.length){const p=document.createElement('p');p.textContent='还没有使用记录。填写一次真实观察后会显示在这里。';list.append(p);}
+  for(const r of records){const card=document.createElement('section');card.className='finder-card';const h=document.createElement('h2');h.textContent=r.brand+' · '+r.date.replace('T',' ');const p=document.createElement('p');p.textContent=r.device+' / '+r.network+' / '+r.node;const result=document.createElement('p');result.textContent=r.result;const remove=document.createElement('button');remove.className='button subtle';remove.type='button';remove.textContent='删除这条记录';remove.addEventListener('click',()=>{records=records.filter(x=>x.id!==r.id);save();render();status.textContent='已删除这条记录。';});card.append(h,p,result,remove);list.append(card);}
+ };
+ usageForm.addEventListener('submit',e=>{e.preventDefault();if(!usageForm.reportValidity())return;if(records.length>=100){status.textContent='已保存100条，请导出并删除旧记录后再添加。';return;}const data=new FormData(usageForm);records.unshift({id:crypto.randomUUID(),brand:usageForm.elements.brand.selectedOptions[0].textContent,...Object.fromEntries(['date','device','network','node','result'].map(k=>[k,String(data.get(k)).trim()]))});if(save())status.textContent='已保存到本浏览器，未上传或公开。';render();});
+ document.querySelector('[data-usage-export]').addEventListener('click',()=>{if(!records.length){status.textContent='还没有可导出的记录。';return;}const url=URL.createObjectURL(new Blob([JSON.stringify({description:'个人填写的使用观察，非本站独立实测',records},null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='三毛机场-个人使用记录.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);status.textContent='已生成本机记录导出文件。';});render();
+}
 if(correctionForm){
  const source=correctionForm.querySelector('[name=page]'),details=correctionForm.querySelector('[name=details]'),type=correctionForm.querySelector('[name=type]');
  const requested=new URLSearchParams(location.search).get('page');
