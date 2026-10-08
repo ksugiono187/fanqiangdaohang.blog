@@ -55,3 +55,6 @@ for(const route of ['plans','finder','updates','usage-records'])assert(seo.some(
 
 const plansHtml=fs.readFileSync(path.join(out,'plans/index.html'),'utf8');assert.equal((plansHtml.match(/data-mobile-plan=/g)||[]).length,29);
 const finderHtml=fs.readFileSync(path.join(out,'finder/index.html'),'utf8');assert(!finderHtml.includes('name="devices"'));assert(finderHtml.includes('设备筛选暂未开放'));
+
+for(const b of brands.slice(0,10)){const html=fs.readFileSync(path.join(out,'brands',b.slug,'index.html'),'utf8');assert(html.includes('data-refined-brand="'+b.slug+'"'));assert(html.includes('href="#specific-decision"'));}
+for(const slug of ['airport-recommendations','airport-recommendations-2026','stable-airports','cheap-airports','dedicated-airports','airport-ranking']){const html=fs.readFileSync(path.join(out,'guides',slug,'index.html'),'utf8');assert(html.includes('data-refined-guide="'+slug+'"'));}
