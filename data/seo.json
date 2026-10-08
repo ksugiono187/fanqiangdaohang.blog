@@ -1278,6 +1278,12 @@
     "keywords": "机场使用记录,网络体验记录"
   },
   {
+    "route": "/contact/",
+    "title": "联系我们｜Telegram与邮箱 - 三毛机场",
+    "description": "通过Telegram @Hy_0027或邮箱ksugiono187@gmail.com联系三毛机场，反馈网站内容、资料更正或合作事宜。",
+    "keywords": "三毛机场,联系我们,Telegram,邮箱"
+  },
+  {
     "route": "/about/",
     "title": "关于本站｜编辑说明与商业披露 - 三毛机场",
     "description": "了解三毛机场的资料来源、固定排名、推广链接及信息核对范围。",
