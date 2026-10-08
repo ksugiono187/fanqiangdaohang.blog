@@ -7,6 +7,11 @@ const seo=JSON.parse(fs.readFileSync(path.join(root,'data/seo.json'),'utf8'));
 assert.equal(brands.length,29);assert.equal(brands.filter(b=>b.coupon).length,11);
 assert.equal(new Set(brands.map(b=>b.url)).size,29);
 assert.equal(new Set(brands.map(b=>b.slug)).size,29);
+assert.equal(brands.filter(b=>b.reference).length,28,'Reference source must match 28 requested brands');
+assert.deepEqual(brands.filter(b=>!b.reference).map(b=>b.slug),['dalaocloud']);
+for(const b of brands){if(!b.reference)continue;const profile=fs.readFileSync(path.join(out,'brands',b.slug,'index.html'),'utf8');assert(profile.includes(b.reference.price),'Missing reference price: '+b.slug);assert(profile.includes(b.reference.traffic),'Missing reference traffic: '+b.slug);assert(profile.includes(b.reference.sourceUrl),'Missing reference source: '+b.slug);}
+assert.equal(brands.find(b=>b.slug==='flycat').reference.priceBasis,'年付折算月价');
+assert.equal(brands.find(b=>b.slug==='edgenova').reference.priceBasis,'年付起价');
 const home=fs.readFileSync(path.join(out,'index.html'),'utf8');
 let previous=-1;
 for(const b of brands){const current=home.indexOf('id="brand-'+b.slug+'"');assert(current>previous,'Ranking order: '+b.name);previous=current;assert(home.includes(b.url.replaceAll('&','&amp;')));assert(home.includes(b.advantage));}

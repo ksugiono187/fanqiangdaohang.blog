@@ -5,15 +5,36 @@
     "name": "微风网络 Breezenet",
     "url": "https://edp01.breezenetaff.com/#/?code=4KDOroY0",
     "coupon": "weifeng90",
-    "advantage": "周期与不限时选择",
-    "audience": "不固定使用时长的用户",
+    "advantage": "IEPL/IPLC · 入门友好",
+    "audience": "日常浏览、流媒体与在线工具用户",
     "check": "先比较按月流量与一次性流量的有效期，确认是否允许流量重置。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/breezenet"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "01",
+      "name": "微风网络",
+      "position": "入门友好",
+      "price": "¥8/月起",
+      "traffic": "200GB",
+      "line": "IEPL/IPLC",
+      "protocol": "VLESS",
+      "sourceAudience": "初级用户、流媒体爱好者、ChatGPT/AI工具使用者",
+      "sourceCoupon": "weifeng90",
+      "sourceUrl": "https://jichang-tuijian.org/brands/breezenet",
+      "audience": "日常浏览、流媒体与在线工具用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源未明确流量周期",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 2,
@@ -21,15 +42,36 @@
     "name": "飞猫云",
     "url": "https://flycat1.flycatvipaff.cc/#/?code=Os3T3OxW",
     "coupon": "flycat888",
-    "advantage": "小流量入门方案",
-    "audience": "轻量上网与备用需求",
+    "advantage": "IEPL/IPLC / 优质中转线路 · 高性价比方案",
+    "audience": "同时关注预算与流量配置的用户",
     "check": "小包是否仅限年付、每月流量如何重置，比折算月价更值得先确认。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/flycat"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "02",
+      "name": "飞猫云",
+      "position": "高性价比方案",
+      "price": "约 ¥7/月起（年付折算月）",
+      "traffic": "150GB",
+      "line": "IEPL/IPLC / 优质中转线路",
+      "protocol": "Shadowsocks / V2Ray",
+      "sourceAudience": "预算有限但对流量有较高需求的用户，全平台设备使用者",
+      "sourceCoupon": "flycat888",
+      "sourceUrl": "https://jichang-tuijian.org/brands/flycat",
+      "audience": "同时关注预算与流量配置的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "年付折算月价",
+      "trafficCycle": "来源未明确流量周期",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 3,
@@ -37,15 +79,36 @@
     "name": "暮光网络",
     "url": "https://varnexa.twilightaff.com/#/?code=3qqonTlH",
     "coupon": "",
-    "advantage": "定制方案选择",
-    "audience": "有特定地区线路需求的用户",
+    "advantage": "专线节点 · 专线入门选择",
+    "audience": "需要核对专线与协议配置的中轻度用户",
     "check": "询问定制节点的地区、独享范围与交付周期，避免将定制入口理解为默认套餐。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/twilight"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "03",
+      "name": "暮光网络",
+      "position": "专线入门选择",
+      "price": "¥20/月起",
+      "traffic": "120GB/月",
+      "line": "专线节点",
+      "protocol": "VLESS",
+      "sourceAudience": "追求稳定性的中轻度网络使用者",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/twilight",
+      "audience": "需要核对专线与协议配置的中轻度用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 4,
@@ -61,7 +124,8 @@
       "https://jichangtuijian.homes/iepl-airport/"
     ],
     "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    "updated": "2026-10-08",
+    "reference": null
   },
   {
     "rank": 5,
@@ -69,15 +133,36 @@
     "name": "Firefly机场",
     "url": "https://vip02.fireflyaff.com/#/?code=Fes6j9rn",
     "coupon": "firefly",
-    "advantage": "专线线路定位",
-    "audience": "关注线路类型的用户",
+    "advantage": "优质线路 · 低价入门",
+    "audience": "能接受年付、月度流量需求较轻的用户",
     "check": "公开资料将其列为 IPLC 候选；线路名称不能替代你在本地网络的实际体验。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/firefly"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "07",
+      "name": "Firefly机场",
+      "position": "低价入门",
+      "price": "约 ¥8/月（年付折算）",
+      "traffic": "60GB/月",
+      "line": "优质线路",
+      "protocol": "VLESS",
+      "sourceAudience": "学生群体、轻度查阅资料者、预算极其有限的用户",
+      "sourceCoupon": "firefly",
+      "sourceUrl": "https://jichang-tuijian.org/brands/firefly",
+      "audience": "能接受年付、月度流量需求较轻的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "年付折算月价",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场推荐 · 专线候选目录",
       "https://jichang360.bid/dedicated/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 6,
@@ -85,15 +170,36 @@
     "name": "灵猫",
     "url": "https://vip02.civetaff.com/#/?code=kZlRw46w",
     "coupon": "",
-    "advantage": "多周期套餐选择",
-    "audience": "按使用周期安排预算的用户",
+    "advantage": "IPLC · 大流量专线",
+    "audience": "流量需求较高并关注线路类型的用户",
     "check": "比较相同流量档的月付、季付与年付总价，明确退款政策后再选择周期。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/civet"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "05",
+      "name": "灵猫",
+      "position": "大流量专线",
+      "price": "¥25/月起",
+      "traffic": "150GB/月",
+      "line": "IPLC",
+      "protocol": "V2Ray",
+      "sourceAudience": "流量消耗较大且需要极高网络稳定性的重度用户",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/civet",
+      "audience": "流量需求较高并关注线路类型的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 7,
@@ -101,15 +207,36 @@
     "name": "闪跃 FlashLeap",
     "url": "https://vip02.flashleapaff.com/#/?code=FkCGEeaC",
     "coupon": "shanyue",
-    "advantage": "IPLC 专线定位",
-    "audience": "需要比较专线服务的用户",
+    "advantage": "IPLC纯专线 · 纯专线方案",
+    "audience": "优先比较专线范围与流量规则的用户",
     "check": "确认当前套餐的节点倍率；宣传的线路类型与结算流量是两个不同的问题。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/flashleap"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "06",
+      "name": "闪跃",
+      "position": "纯专线方案",
+      "price": "¥24/月起",
+      "traffic": "150GB/月",
+      "line": "IPLC纯专线",
+      "protocol": "主流协议",
+      "sourceAudience": "拒绝线路掺假、追求极致稳定和纯粹专线体验的用户",
+      "sourceCoupon": "shanyue",
+      "sourceUrl": "https://jichang-tuijian.org/brands/flashleap",
+      "audience": "优先比较专线范围与流量规则的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场推荐 · 专线候选目录",
       "https://jichang360.bid/dedicated/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 8,
@@ -117,15 +244,36 @@
     "name": "无忧链接",
     "url": "https://wep01.worryfreeaff.com/#/?code=56A0RTpU",
     "coupon": "wuyou666",
-    "advantage": "不限时流量选择",
-    "audience": "间歇使用与备用需求",
+    "advantage": "IPLC · 稳定型方案",
+    "audience": "重视目标地区连接表现的用户",
     "check": "一次性流量适合不固定用量，但仍需查看到期规则及账号保留政策。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/worryfree"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "04",
+      "name": "无忧链接",
+      "position": "稳定型方案",
+      "price": "¥19/月起",
+      "traffic": "100GB/月",
+      "line": "IPLC",
+      "protocol": "Shadowsocks / V2Ray",
+      "sourceAudience": "对网络延迟和稳定性有较高要求的用户，如游戏玩家或外贸从业者",
+      "sourceCoupon": "wuyou666",
+      "sourceUrl": "https://jichang-tuijian.org/brands/worryfree",
+      "audience": "重视目标地区连接表现的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 9,
@@ -133,15 +281,36 @@
     "name": "跨界云",
     "url": "https://vip02.kuajieaff.com/#/?code=VfWeYwHM",
     "coupon": "",
-    "advantage": "大流量套餐选择",
-    "audience": "经常下载或观看视频的用户",
+    "advantage": "全专线架构 · 全专线架构",
+    "audience": "希望核对专线覆盖范围的用户",
     "check": "先核对高流量档的节点倍率、并发限制和是否能在周期内重置。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/kuajie"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "08",
+      "name": "跨界云",
+      "position": "全专线架构",
+      "price": "¥20/月起",
+      "traffic": "120GB/月",
+      "line": "全专线架构",
+      "protocol": "Shadowsocks",
+      "sourceAudience": "对全时段网络连通率要求极高的专业人士",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/kuajie",
+      "audience": "希望核对专线覆盖范围的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 10,
@@ -149,15 +318,36 @@
     "name": "星岛梦 StarDream",
     "url": "https://kfccbb.xingdaomeng.com/#/?code=JTRIWFim",
     "coupon": "nmw888",
-    "advantage": "周期与流量包选择",
-    "audience": "需要灵活安排流量的用户",
+    "advantage": "IPLC / IEPL · 综合专线方案",
+    "audience": "关注专线配置与月度预算的用户",
     "check": "将月付和一次性方案分开比较；套餐跨度不直接说明实际速度与可用性。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/stardream"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "23",
+      "name": "星岛梦",
+      "position": "综合专线方案",
+      "price": "¥16/月起",
+      "traffic": "100GB/月",
+      "line": "IPLC / IEPL",
+      "protocol": "V2Ray",
+      "sourceAudience": "追求全面专线体验且预算适中的高阶用户",
+      "sourceCoupon": "nmw888",
+      "sourceUrl": "https://jichang-tuijian.org/brands/stardream",
+      "audience": "关注专线配置与月度预算的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 11,
@@ -165,15 +355,36 @@
     "name": "光速云 LightSpeed",
     "url": "https://mdlky.gsyaff.com/#/?code=6tRWbtgK",
     "coupon": "jichangcha09",
-    "advantage": "套餐层级较丰富",
-    "audience": "从轻量到高用量的用户",
+    "advantage": "公网隧道中转 · 灵活套餐",
+    "audience": "希望比较多种套餐结构的用户",
     "check": "同一品牌不同套餐可能使用不同节点池，先看目标套餐能访问哪些节点。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/lightspeed"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "24",
+      "name": "光速云",
+      "position": "灵活套餐",
+      "price": "¥23/月起",
+      "traffic": "148GB",
+      "line": "公网隧道中转",
+      "protocol": "主流协议",
+      "sourceAudience": "需求多变、希望有丰富套餐选择的实用主义者",
+      "sourceCoupon": "jichangcha09",
+      "sourceUrl": "https://jichang-tuijian.org/brands/lightspeed",
+      "audience": "希望比较多种套餐结构的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源未明确流量周期",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 12,
@@ -181,15 +392,36 @@
     "name": "唯兔云（V2云）",
     "url": "https://fast.v2yunvipaff.com/#/?code=xYEe8gyb",
     "coupon": "rabbit",
-    "advantage": "小包与不限时方案",
-    "audience": "希望同时比较两种计费方式的用户",
+    "advantage": "IPLC专线 · 高性价比专线",
+    "audience": "同时关注参考价、流量与专线配置的用户",
     "check": "两种别名对应本页同一入口，注册和续费请使用自己保存的账户信息。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/v2yun"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "25",
+      "name": "唯兔云",
+      "position": "高性价比专线",
+      "price": "¥14.9/月起",
+      "traffic": "100GB/月",
+      "line": "IPLC专线",
+      "protocol": "VLESS / SS",
+      "sourceAudience": "学生、对价格极度敏感但需要专线稳定性的用户",
+      "sourceCoupon": "rabbit",
+      "sourceUrl": "https://jichang-tuijian.org/brands/v2yun",
+      "audience": "同时关注参考价、流量与专线配置的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 13,
@@ -197,15 +429,36 @@
     "name": "U1S1（有一说一）",
     "url": "https://pkdj7.vipaff.cc/#/?code=NMjmHbvu",
     "coupon": "U1S1",
-    "advantage": "多档流量选择",
-    "audience": "用量会随月份变化的用户",
+    "advantage": "BGP三网优化 + IEPL · 三网优化",
+    "audience": "希望观察不同运营商路径表现的用户",
     "check": "确认升级套餐时剩余价值是否折抵，以及升级后原有流量如何处理。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/u1s1"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "26",
+      "name": "U1S1",
+      "position": "三网优化",
+      "price": "¥20/月起",
+      "traffic": "120GB/月",
+      "line": "BGP三网优化 + IEPL",
+      "protocol": "Shadowsocks",
+      "sourceAudience": "受困于国内复杂网络环境（如偏远地区或小众运营商）的用户",
+      "sourceCoupon": "U1S1",
+      "sourceUrl": "https://jichang-tuijian.org/brands/u1s1",
+      "audience": "希望观察不同运营商路径表现的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 14,
@@ -213,15 +466,36 @@
     "name": "极连云",
     "url": "https://kdjhao.jlyvipaff.com/#/?code=poyoU7mq",
     "coupon": "",
-    "advantage": "轻量与定制方案",
-    "audience": "想从小套餐开始的用户",
+    "advantage": "IPLC / IEPL · 低门槛专线",
+    "audience": "希望比较专线入门方案的用户",
     "check": "公开资料中的线路和协议描述存在差异，导入前核对当前订阅格式。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/jilianyun"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "27",
+      "name": "极连云",
+      "position": "低门槛专线",
+      "price": "¥14.4/月起",
+      "traffic": "100GB/月",
+      "line": "IPLC / IEPL",
+      "protocol": "自研/通用",
+      "sourceAudience": "初入专线圈子、追求极致性价比的新老用户",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/jilianyun",
+      "audience": "希望比较专线入门方案的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 15,
@@ -229,15 +503,36 @@
     "name": "全球云",
     "url": "https://sswdh.gcvipaff.com/#/?code=NE1AcNIX",
     "coupon": "tt88",
-    "advantage": "一次性流量包选择",
-    "audience": "需要按实际用量安排购买的用户",
+    "advantage": "中转优化 · 中转均衡方案",
+    "audience": "希望比较中转型套餐的用户",
     "check": "一次性包与月度包的流量计费可能不同，先读有效期与倍率说明。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/globalcloud"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "28",
+      "name": "全球云",
+      "position": "中转均衡方案",
+      "price": "约 ¥20/月起",
+      "traffic": "120GB/月",
+      "line": "中转优化",
+      "protocol": "VLESS / Trojan",
+      "sourceAudience": "需要稳定翻墙服务、不盲目追求专线的务实型用户",
+      "sourceCoupon": "tt88",
+      "sourceUrl": "https://jichang-tuijian.org/brands/globalcloud",
+      "audience": "希望比较中转型套餐的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 16,
@@ -245,15 +540,36 @@
     "name": "光年梯",
     "url": "https://ggmq.gntaff.com/#/?code=RAJFvngV",
     "coupon": "",
-    "advantage": "轻量到高用量覆盖",
-    "audience": "准备逐步增加流量的用户",
+    "advantage": "IEPL专线 · 低价IEPL",
+    "audience": "关注IEPL资料与参考价格的用户",
     "check": "从低档开始观察一周用量，再估算整月需要多少流量。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/lightyear"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "29",
+      "name": "光年梯",
+      "position": "低价IEPL",
+      "price": "¥12.6/月起",
+      "traffic": "110GB/月",
+      "line": "IEPL专线",
+      "protocol": "Shadowsocks",
+      "sourceAudience": "所有寻求高性价比专线服务的用户",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/lightyear",
+      "audience": "关注IEPL资料与参考价格的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 17,
@@ -261,15 +577,36 @@
     "name": "Sogo云",
     "url": "https://wzjc.sogoyunaff.cc/#/?code=2x2EywO9",
     "coupon": "",
-    "advantage": "专线定位",
-    "audience": "准备比较线路方案的用户",
+    "advantage": "IEPL企业级专线 · 企业级专线",
+    "audience": "关注专线配置与设备兼容的用户",
     "check": "不同公开资料对协议的描述不一致，以当前客户端下载说明为准。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/sogocloud"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "10",
+      "name": "Sogo云",
+      "position": "企业级专线",
+      "price": "¥25/月起",
+      "traffic": "150GB/月",
+      "line": "IEPL企业级专线",
+      "protocol": "自研协议/通用协议",
+      "sourceAudience": "对网络质量要求极高的商务人士、研发人员",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/sogocloud",
+      "audience": "关注专线配置与设备兼容的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "COIO · 参数目录",
       "https://www.coio.net/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 18,
@@ -277,15 +614,36 @@
     "name": "宇宙云 YuZhou",
     "url": "https://wzjc.yuzoucloud.cc/#/?code=wL7YStBa",
     "coupon": "YUZHOU553",
-    "advantage": "小包与常规档并存",
-    "audience": "轻量使用后再升级的用户",
+    "advantage": "IPLC / IEPL · 轻量专线",
+    "audience": "月度流量需求较轻的专线候选用户",
     "check": "比较首购优惠和续费价格；优惠后的首月成本不代表长期成本。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/yuzhou"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "11",
+      "name": "宇宙云",
+      "position": "轻量专线",
+      "price": "¥14.9/月起",
+      "traffic": "60GB/月起",
+      "line": "IPLC / IEPL",
+      "protocol": "主流协议",
+      "sourceAudience": "想体验顶级专线但流量需求不大的用户",
+      "sourceCoupon": "YUZHOU553",
+      "sourceUrl": "https://jichang-tuijian.org/brands/yuzhou",
+      "audience": "月度流量需求较轻的专线候选用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 19,
@@ -293,15 +651,36 @@
     "name": "二猫云 2mao",
     "url": "https://waaa.2maoyunaff.cc/#/?code=uHeyKG44",
     "coupon": "",
-    "advantage": "小流量套餐选择",
-    "audience": "流量需求较少的用户",
+    "advantage": "多节点覆盖 · 多节点选择",
+    "audience": "需要比较多种套餐与地区节点的用户",
     "check": "年付小包与月付小包分别核对，不要把不同方案的价格和流量拼在一起。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/2mao"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "12",
+      "name": "二猫云",
+      "position": "多节点选择",
+      "price": "约 ¥15/月起",
+      "traffic": "多种套餐",
+      "line": "多节点覆盖",
+      "protocol": "主流协议",
+      "sourceAudience": "需要切换多个国家节点或对套餐定制有需求的用户",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/2mao",
+      "audience": "需要比较多种套餐与地区节点的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "额度与周期未明确",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 20,
@@ -309,15 +688,36 @@
     "name": "一翻云 1fly",
     "url": "https://wzjc.1flyunaff.cc/#/?code=F7eaT191",
     "coupon": "",
-    "advantage": "客户端与订阅兼容",
-    "audience": "希望使用现有客户端的用户",
+    "advantage": "专线节点 · 高流量专线",
+    "audience": "流媒体与文件下载需求较多的用户",
     "check": "安装前确认软件系统版本要求，以及订阅是否适配你正在使用的客户端。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/1fly"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "13",
+      "name": "一翻云",
+      "position": "高流量专线",
+      "price": "¥25/月起",
+      "traffic": "150GB/月",
+      "line": "专线节点",
+      "protocol": "主流协议",
+      "sourceAudience": "经常观看高清流媒体、下载大文件的专线用户",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/1fly",
+      "audience": "流媒体与文件下载需求较多的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 21,
@@ -325,15 +725,36 @@
     "name": "边缘节点 EdgeNova",
     "url": "https://work.edgenovaaff.cc/#/?code=z81zCfw1",
     "coupon": "",
-    "advantage": "多档用量方案",
-    "audience": "想控制入门成本的用户",
+    "advantage": "IEPL专线直连 · 年付型方案",
+    "audience": "能接受年付并关注客户端易用性的用户",
     "check": "自动分配线路是资料中的定位，是否适合本地运营商仍需实际观察。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/edgenova"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "14",
+      "name": "边缘节点",
+      "position": "年付型方案",
+      "price": "约 ¥86/年起",
+      "traffic": "大流量套餐",
+      "line": "IEPL专线直连",
+      "protocol": "专用客户端支持",
+      "sourceAudience": "喜欢一次性买断一年的用户、追求客户端易用性的人群",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/edgenova",
+      "audience": "能接受年付并关注客户端易用性的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "年付起价",
+      "trafficCycle": "额度与周期未明确",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 22,
@@ -341,15 +762,36 @@
     "name": "可信云",
     "url": "https://work.kosingaff.com/#/?code=BNsA58Es",
     "coupon": "",
-    "advantage": "IEPL / VLESS 定位",
-    "audience": "需要进一步核对线路的用户",
+    "advantage": "IPLC · 低价IPLC",
+    "audience": "希望控制月度预算的轻量用户",
     "check": "可查资料尚不完整，先确认套餐、节点和售后政策；本页不据此判断稳定性。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/kosing"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "15",
+      "name": "可信云",
+      "position": "低价IPLC",
+      "price": "¥9/月起",
+      "traffic": "45GB/月",
+      "line": "IPLC",
+      "protocol": "主流协议",
+      "sourceAudience": "预算不到十元却渴望体验IPLC极致低延迟的用户",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/kosing",
+      "audience": "希望控制月度预算的轻量用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场实测室 · 对照资料",
       "https://jichangtuijian.mom/compare/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 23,
@@ -357,15 +799,36 @@
     "name": "速界 SuJie",
     "url": "https://work.speedworldaff.cc/#/?code=wSjLCpIf",
     "coupon": "",
-    "advantage": "专线候选",
-    "audience": "以线路比较为优先的用户",
+    "advantage": "新手优化线路 · 新手友好",
+    "audience": "希望简化客户端配置的新用户",
     "check": "专线入口不等于所有地区都走相同路径，询问目标地区和入口运营商。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/sujie"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "16",
+      "name": "速界",
+      "position": "新手友好",
+      "price": "¥25/月起",
+      "traffic": "按套餐而定",
+      "line": "新手优化线路",
+      "protocol": "官方客户端",
+      "sourceAudience": "小白用户、不愿意折腾第三方代理软件的用户",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/sujie",
+      "audience": "希望简化客户端配置的新用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "额度与周期未明确",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "COIO · 参数目录",
       "https://www.coio.net/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 24,
@@ -373,15 +836,36 @@
     "name": "快狸 KuaiLi",
     "url": "https://work.kuailicloud.cc/#/?code=gVGJa0Mp",
     "coupon": "",
-    "advantage": "定制线路定位",
-    "audience": "有特定办公线路需求的用户",
+    "advantage": "IEPL专线 · 自研轻量专线",
+    "audience": "能接受年付的轻量或备用用户",
     "check": "定制需求应先确认带宽、地区和服务范围，并与常规订阅分别比较。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/kuaili"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "17",
+      "name": "快狸",
+      "position": "自研轻量专线",
+      "price": "¥10/月起（年付折算）",
+      "traffic": "30GB/月",
+      "line": "IEPL专线",
+      "protocol": "自研客户端",
+      "sourceAudience": "需要长期备用、偶尔使用海外网络的用户",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/kuaili",
+      "audience": "能接受年付的轻量或备用用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "年付折算月价",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "COIO · 参数目录",
       "https://www.coio.net/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 25,
@@ -389,15 +873,36 @@
     "name": "飞V",
     "url": "https://varnexa.flyvaff.com/#/?code=UoU2Izm5",
     "coupon": "",
-    "advantage": "独享线路方案选择",
-    "audience": "有特定出口需求的用户",
+    "advantage": "优化线路 · 超低价方案",
+    "audience": "预算较低、使用频率不固定的用户",
     "check": "独享方案是另行购买还是套餐默认包含，应在下单前向服务商确认。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/fei-v"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "18",
+      "name": "飞V",
+      "position": "超低价方案",
+      "price": "¥4.9/月起",
+      "traffic": "提供不限时套餐",
+      "line": "优化线路",
+      "protocol": "Trojan / V2Ray",
+      "sourceAudience": "偶尔翻墙、极度控制预算的用户",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/fei-v",
+      "audience": "预算较低、使用频率不固定的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "额度与周期未明确",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 26,
@@ -405,15 +910,36 @@
     "name": "梯子云 LadderCloud",
     "url": "https://varnexa.ladderaff.com/#/?code=kuE4kqxo",
     "coupon": "",
-    "advantage": "客户端与多周期方案",
-    "audience": "希望兼顾导入和计费灵活性的用户",
+    "advantage": "优化中转/专线 · 大流量中转",
+    "audience": "下载、视频或多设备流量需求较高的用户",
     "check": "确认官方软件是否支持你的设备，同时保留通用订阅作为替代导入方式。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/laddercloud"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "19",
+      "name": "梯子云",
+      "position": "大流量中转",
+      "price": "¥25/月起",
+      "traffic": "125GB",
+      "line": "优化中转/专线",
+      "protocol": "主流协议",
+      "sourceAudience": "资源下载狂人、4K/8K视频爱好者、多设备合租用户",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/laddercloud",
+      "audience": "下载、视频或多设备流量需求较高的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源未明确流量周期",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 27,
@@ -421,15 +947,36 @@
     "name": "浪网 WaveNet",
     "url": "https://varnexa.wavenetaff.com/#/?code=oU77JXen",
     "coupon": "",
-    "advantage": "商业与定制档选择",
-    "audience": "高用量或特定线路需求的用户",
+    "advantage": "自研客户端优化线路 · 高流量方案",
+    "audience": "关注流量配置与客户端使用方式的用户",
     "check": "商业档名称不代表服务承诺，查看设备数、并发限制和工单支持范围。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/wavenet"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "20",
+      "name": "浪网",
+      "position": "高流量方案",
+      "price": "¥30/月起",
+      "traffic": "150GB/月",
+      "line": "自研客户端优化线路",
+      "protocol": "VLESS",
+      "sourceAudience": "追求流量与客户端易用性平衡的用户",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/wavenet",
+      "audience": "关注流量配置与客户端使用方式的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 28,
@@ -437,15 +984,36 @@
     "name": "灵动云",
     "url": "https://varnexa.lingdongaff.com/#/?code=QcRK6OPG",
     "coupon": "",
-    "advantage": "大流量与单次流量选择",
-    "audience": "想比较不同流量方案的用户",
+    "advantage": "优化节点 · 均衡型套餐",
+    "audience": "需要清晰周期流量配置的用户",
     "check": "AI 服务的地区支持会变化，购买前用目标节点访问自己实际需要的服务。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/lingdong"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "21",
+      "name": "灵动云",
+      "position": "均衡型套餐",
+      "price": "¥20/月起",
+      "traffic": "100GB/月起",
+      "line": "优化节点",
+      "protocol": "Trojan",
+      "sourceAudience": "追求实用主义、需要清晰套餐配置的用户",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/lingdong",
+      "audience": "需要清晰周期流量配置的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   },
   {
     "rank": 29,
@@ -453,14 +1021,35 @@
     "name": "隐形人",
     "url": "https://varnexa.invisibleaff.com/#/?code=JF4seZUy",
     "coupon": "",
-    "advantage": "周期与定制方案选择",
-    "audience": "需要比较多层级套餐的用户",
+    "advantage": "IEPL纯专线 · 纯专线流量",
+    "audience": "同时关注专线资料与流量额度的用户",
     "check": "品牌名称不能证明匿名性；对隐私有要求时，应单独阅读隐私政策与日志说明。",
     "source": [
+      "站长提供的旧博客 · 品牌资料",
+      "https://jichang-tuijian.org/brands/invisible"
+    ],
+    "evidence": "站长提供的参考资料，非本站实测",
+    "updated": "2026-10-08",
+    "reference": {
+      "sourceRank": "22",
+      "name": "隐形人",
+      "position": "纯专线流量",
+      "price": "¥24/月起",
+      "traffic": "144GB/月",
+      "line": "IEPL纯专线",
+      "protocol": "主流协议",
+      "sourceAudience": "对稳定性和流量都有较高要求的视频创作者或重度游戏玩家",
+      "sourceCoupon": "暂无",
+      "sourceUrl": "https://jichang-tuijian.org/brands/invisible",
+      "audience": "同时关注专线资料与流量额度的用户",
+      "retrieved": "2026-10-08",
+      "priceBasis": "月价参考（实际付款周期需核对）",
+      "trafficCycle": "来源标为每月",
+      "pairing": "来源为品牌级参考参数，未确认起步价与流量是否对应同一套餐"
+    },
+    "previousSource": [
       "机场探 · 品牌资料目录",
       "https://jichangtan.com/airports/"
-    ],
-    "evidence": "第三方资料所述，本站未实测",
-    "updated": "2026-10-08"
+    ]
   }
 ]
